@@ -14,13 +14,13 @@
 		<div class="row">
 		  <h1 style="text-align: center; color: dark-blue;">Calcule seu IMC</h1>
 		  <BR>
-		  <form role="form">
+		  <form>
 		    Nome: <input type="text" name="nome">
-		    <br>
+		    <br><br>
 		    Massa (em Kg): <input type="numeric" name="massa">
-		    <br>
+		    <br><br>
 		    Altura (em M): <input type="numeric" name="altura">
-		    <input type="submit">Calcular</input>
+		    <input type="submit">
 		  </form>
 		  <br>
 		  <h2>

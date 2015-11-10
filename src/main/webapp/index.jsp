@@ -15,16 +15,16 @@
 <div class="col-md-4">
 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title"></h3>
+                        <h3 class="panel-title"; style="text-align: center;">Calcule seu IMC</h3>
                     </div>
                     <div class="panel-body">
                         <form role="form">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Massa" name="massa" type="numeric" autofocus="">
+                                    <input class="form-control" placeholder="Digite sua massa (em Kg)" name="massa" type="numeric" autofocus="">
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Altura" name="altura" type="numeric" value="">
+                                    <input class="form-control" placeholder="Altura" name="Digite sua altura (em M)" type="numeric" value="">
                                 </div>
                                 <div class="checkbox">
                                     <!-- <label> 		AQUI É A PARTE DO LEMBRAR-ME
@@ -33,6 +33,12 @@
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
                                 <a href="javascript:;" class="btn btn-sm btn-success">Calcular</a>
+                                <!-- VALIDAR SE OS CAMPOS FORAM PREENCHIDOS (Inicio)-->
+                                <%
+                                	if(peso == 0 || altura == 0)
+                                %>
+                                <div>INCLUIR CODIGO DO PROFESSOR</div>
+                                <!-- VALIDAR SE OS CAMPOS FORAM PREENCHIDOS (Fim) -->
                             </fieldset>
                         </form>
                     </div>
